@@ -1,0 +1,7 @@
+kubectl get ClusterSecretStore clustersecretstore-opin-dev
+
+kubectl get ExternalSecret my-external-secret
+
+kubectl get secrets my-kubernetes-secret -o json | jq -r .data.password | base64 -d
+
+kubectl get serviceaccount
